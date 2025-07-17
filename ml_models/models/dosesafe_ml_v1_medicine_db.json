@@ -1,0 +1,216 @@
+[
+  {
+    "name": "Aspirin",
+    "aliases": [
+      "acetylsalicylic acid",
+      "ASA",
+      "aspirin",
+      "baby aspirin"
+    ],
+    "category": "NSAID",
+    "common_doses": [
+      "81mg",
+      "325mg",
+      "500mg"
+    ],
+    "interactions": [
+      "warfarin",
+      "ibuprofen",
+      "alcohol"
+    ],
+    "age_warnings": {
+      "elderly": "Increased bleeding risk"
+    }
+  },
+  {
+    "name": "Warfarin",
+    "aliases": [
+      "coumadin",
+      "warfarin sodium",
+      "warfarin"
+    ],
+    "category": "Anticoagulant",
+    "common_doses": [
+      "1mg",
+      "2mg",
+      "5mg",
+      "10mg"
+    ],
+    "interactions": [
+      "aspirin",
+      "ibuprofen",
+      "vitamin K"
+    ],
+    "age_warnings": {
+      "elderly": "Requires frequent monitoring"
+    }
+  },
+  {
+    "name": "Hydroxyzine",
+    "aliases": [
+      "atarax",
+      "vistaril",
+      "hydroxyzine hcl",
+      "hydroxyzinevariant22"
+    ],
+    "category": "Antihistamine",
+    "common_doses": [
+      "10mg",
+      "25mg",
+      "50mg"
+    ],
+    "interactions": [
+      "alcohol",
+      "sedatives"
+    ],
+    "age_warnings": {
+      "elderly": "Anticholinergic effects"
+    }
+  },
+  {
+    "name": "Metoprolol",
+    "aliases": [
+      "lopressor",
+      "toprol xl",
+      "metoprolol tartrate",
+      "metoprolol succinate"
+    ],
+    "category": "Beta Blocker",
+    "common_doses": [
+      "25mg",
+      "50mg",
+      "100mg"
+    ],
+    "interactions": [
+      "insulin",
+      "epinephrine"
+    ],
+    "age_warnings": {
+      "elderly": "Monitor blood pressure"
+    }
+  },
+  {
+    "name": "Lorazepam",
+    "aliases": [
+      "ativan",
+      "lorazepam",
+      "lorazepamvariant21"
+    ],
+    "category": "Benzodiazepine",
+    "common_doses": [
+      "0.5mg",
+      "1mg",
+      "2mg"
+    ],
+    "interactions": [
+      "alcohol",
+      "opioids",
+      "sedatives"
+    ],
+    "age_warnings": {
+      "elderly": "High fall risk"
+    }
+  },
+  {
+    "name": "Lisinopril",
+    "aliases": [
+      "prinivil",
+      "zestril",
+      "lisinopril"
+    ],
+    "category": "ACE Inhibitor",
+    "common_doses": [
+      "2.5mg",
+      "5mg",
+      "10mg",
+      "20mg"
+    ],
+    "interactions": [
+      "potassium",
+      "lithium"
+    ],
+    "age_warnings": {
+      "elderly": "Monitor kidney function"
+    }
+  },
+  {
+    "name": "Atorvastatin",
+    "aliases": [
+      "lipitor",
+      "atorvastatin calcium"
+    ],
+    "category": "Statin",
+    "common_doses": [
+      "10mg",
+      "20mg",
+      "40mg",
+      "80mg"
+    ],
+    "interactions": [
+      "grapefruit",
+      "digoxin"
+    ],
+    "age_warnings": {
+      "elderly": "Monitor liver function"
+    }
+  },
+  {
+    "name": "Omeprazole",
+    "aliases": [
+      "prilosec",
+      "omeprazole"
+    ],
+    "category": "PPI",
+    "common_doses": [
+      "20mg",
+      "40mg"
+    ],
+    "interactions": [
+      "clopidogrel",
+      "warfarin"
+    ],
+    "age_warnings": {
+      "elderly": "Long-term use concerns"
+    }
+  },
+  {
+    "name": "Metformin",
+    "aliases": [
+      "glucophage",
+      "metformin hcl"
+    ],
+    "category": "Antidiabetic",
+    "common_doses": [
+      "500mg",
+      "750mg",
+      "1000mg"
+    ],
+    "interactions": [
+      "alcohol",
+      "contrast dye"
+    ],
+    "age_warnings": {
+      "elderly": "Monitor kidney function"
+    }
+  },
+  {
+    "name": "Amlodipine",
+    "aliases": [
+      "norvasc",
+      "amlodipine besylate"
+    ],
+    "category": "Calcium Channel Blocker",
+    "common_doses": [
+      "2.5mg",
+      "5mg",
+      "10mg"
+    ],
+    "interactions": [
+      "simvastatin",
+      "grapefruit"
+    ],
+    "age_warnings": {
+      "elderly": "Monitor for edema"
+    }
+  }
+]

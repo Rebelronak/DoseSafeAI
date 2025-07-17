@@ -1,0 +1,5 @@
+Patient: Age 70 (elderly)
+Medicines:
+Aspirin
+Warfarin
+Hydroxyzine

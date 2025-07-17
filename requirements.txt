@@ -1,0 +1,19 @@
+Flask==2.3.3
+flask-cors==4.0.0
+easyocr==1.7.0
+opencv-python==4.8.1.78
+spacy==3.7.2
+scispacy==0.5.3
+torch==2.0.1
+numpy==1.24.3
+Werkzeug==2.3.7
+pandas==2.0.3
+pytesseract==0.3.10
+Pillow==10.0.1
+groq==0.4.1
+python-dotenv==1.0.0
+requests==2.31.0
+
+# For scispaCy models, you may need:
+# python -m spacy download en_core_web_sm
+# pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_md-0.5.1.tar.gz

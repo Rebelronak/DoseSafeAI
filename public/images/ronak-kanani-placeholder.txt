@@ -1,0 +1,7 @@
+<!-- This is a placeholder for Ronak Kanani's profile image -->
+<!-- Replace this file with your actual profile image -->
+<!-- Recommended: 400x400 pixels, JPG/PNG format -->
+<!-- Name: ronak-kanani.jpg or ronak-kanani.png -->
+
+<!-- For now, the code will show your initials "RK" in a gradient background -->
+<!-- Once you add your image here, it will automatically display -->
