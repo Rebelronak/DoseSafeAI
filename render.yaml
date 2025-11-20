@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: dosesafe-ai-backend
+    runtime: python
+    plan: free
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r backend/requirements.txt
+      python -m spacy download en_core_web_sm
+    startCommand: cd backend && gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120 --workers 2
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: GROQ_API_KEY
+        sync: false
+      - key: FLASK_ENV
+        value: production
+    healthCheckPath: /health

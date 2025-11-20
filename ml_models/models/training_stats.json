@@ -1,0 +1,23 @@
+{
+  "interaction_model": {
+    "f1_score": 0.9974683544303797,
+    "precision": 1.0,
+    "recall": 0.9949494949494949,
+    "training_samples": 2378,
+    "test_samples": 595
+  },
+  "medicine_extractor": {
+    "f1_score": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "training_samples": 6828,
+    "test_samples": 1708
+  },
+  "age_warning_classifier": {
+    "f1_score": 0.9876665022200296,
+    "precision": 0.9756335282651072,
+    "recall": 1.0,
+    "training_samples": 4100,
+    "test_samples": 1026
+  }
+}

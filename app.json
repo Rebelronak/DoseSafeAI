@@ -1,0 +1,34 @@
+{
+  "name": "DoseSafe-AI",
+  "description": "AI-powered prescription analysis and drug interaction detection system",
+  "website": "https://github.com/yourusername/dosesafe-ai",
+  "repository": "https://github.com/yourusername/dosesafe-ai",
+  "logo": "https://your-logo-url.com/logo.png",
+  "success_url": "/",
+  "env": {
+    "GROQ_API_KEY": {
+      "description": "Your Groq API key for AI analysis",
+      "required": true
+    },
+    "FLASK_ENV": {
+      "value": "production"
+    },
+    "DEBUG": {
+      "value": "False"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    },
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ]
+}

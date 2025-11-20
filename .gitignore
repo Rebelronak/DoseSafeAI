@@ -1,0 +1,218 @@
+# 🚫 DoseSafe AI - Git Ignore File
+
+# 🗝️ Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.key
+*.pem
+*.crt
+secrets.json
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 🧪 Testing
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.cache
+nosetests.xml
+coverage/
+*.lcov
+
+# 🟢 Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+.yarn-integrity
+
+# 📦 Build Outputs
+/frontend/build
+/frontend/dist
+/backend/build
+/backend/dist
+*.tgz
+*.tar.gz
+
+# 🏠 Local Development
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# 📊 IDEs & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vs/
+*.code-workspace
+
+# 🗄️ Databases
+*.db
+*.sqlite
+*.sqlite3
+database.db
+/database/
+
+# 📁 Uploads & Temporary Files
+/backend/uploads/
+/uploads/
+temp/
+tmp/
+*.tmp
+*.temp
+*.log
+
+# 🤖 AI & ML Models (if large)
+/ml_models/models/*.pkl
+/ml_models/models/*.h5
+/ml_models/models/*.joblib
+/ml_models/data/large_datasets/
+*.model
+*.weights
+
+# 🐳 Docker
+.dockerignore
+Dockerfile.prod
+docker-compose.override.yml
+
+# ☁️ Cloud & Deployment
+.serverless/
+.netlify/
+.vercel/
+.next/
+.nuxt/
+
+# 📋 Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 🔄 Runtime
+.runtime/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# 📚 Documentation (generated)
+/docs/_build/
+/docs/site/
+
+# 🔧 Configuration (local overrides)
+config.local.json
+settings.local.json
+
+# 💾 Backup Files
+*.bak
+*.backup
+*.old
+
+# 🎯 Coverage Reports
+/coverage/
+/test-results/
+/.nyc_output
+
+# 📱 React Native
+.expo/
+.expo-shared/
+
+# 🔍 ESLint
+.eslintcache
+
+# 💅 Prettier
+.prettiercache
+
+# 🎨 Sass
+.sass-cache/
+
+# 🌐 Webpack
+.webpack/
+
+# 📦 Parcel
+.parcel-cache/
+
+# ⚡ Vite
+dist-ssr/
+*.local
+
+# 🧹 Misc
+.history/
+.temp/
+.cache/
+.parcel-cache/
+.vscode-test
+
+# 🔐 Security
+*.p12
+*.pfx
+*.cer
+*.der
+
+# 🏗️ Build Tools
+.grunt/
+bower_components/
+
+# 📊 Analytics
+.stats.json
+
+# 🚀 Deployment
+.deploy/
+deploy.log
+
+# 🎭 Testing Artifacts
+/screenshots/
+/videos/
+/test-results/
+
+# Keep these files
+!.gitkeep
+!.gitignore
+!.github/
