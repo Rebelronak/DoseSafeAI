@@ -21,18 +21,19 @@ except ImportError as e:
     print(f"⚠️ ML models not available in main app: {e}")
 
 # Import all blueprints for modular route organization
-from routes.ocr import ocr_bp
-from routes.nlp import nlp_bp
-from routes.interaction import interaction_bp
+# Temporarily disabled routes that need missing dependencies
+# from routes.ocr import ocr_bp
+# from routes.nlp import nlp_bp
+# from routes.interaction import interaction_bp
 from routes.chatbot import chatbot_bp
 
 # Import AI-enhanced route modules
-from routes.ai_ocr import ai_ocr_bp
-from routes.ai_nlp import ai_nlp_bp
-from routes.ai_interactions import ai_interactions_bp
+# from routes.ai_ocr import ai_ocr_bp
+# from routes.ai_nlp import ai_nlp_bp
+# from routes.ai_interactions import ai_interactions_bp
 
 # Import drug database service
-from services.drug_database_service import drug_db_service
+# from services.drug_database_service import drug_db_service
 
 # Initialize global Groq client
 groq_client = None
@@ -69,16 +70,16 @@ CORS(app, resources={
 })
 
 # Register existing route blueprints
-app.register_blueprint(ocr_bp, url_prefix='/ocr')
-app.register_blueprint(nlp_bp, url_prefix='/nlp')
-app.register_blueprint(interaction_bp, url_prefix='/interaction')
+# app.register_blueprint(ocr_bp, url_prefix='/ocr')
+# app.register_blueprint(nlp_bp, url_prefix='/nlp')
+# app.register_blueprint(interaction_bp, url_prefix='/interaction')
 app.register_blueprint(chatbot_bp, url_prefix='/chatbot')
 
 # Register AI-enhanced route blueprints
-app.register_blueprint(ai_ocr_bp, url_prefix='/ai-ocr')
-app.register_blueprint(ai_nlp_bp, url_prefix='/ai-nlp')
-app.register_blueprint(ai_interactions_bp, url_prefix='/ai-interactions')
-app.register_blueprint(ai_only_ocr_bp, url_prefix='/ai-only-ocr')
+# app.register_blueprint(ai_ocr_bp, url_prefix='/ai-ocr')
+# app.register_blueprint(ai_nlp_bp, url_prefix='/ai-nlp')
+# app.register_blueprint(ai_interactions_bp, url_prefix='/ai-interactions')
+# app.register_blueprint(ai_only_ocr_bp, url_prefix='/ai-only-ocr')
 
 @app.route('/')
 def index():
