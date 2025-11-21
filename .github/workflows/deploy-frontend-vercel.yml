@@ -1,0 +1,40 @@
+name: Deploy Frontend to Vercel
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  trigger-vercel-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Trigger Vercel Deploy via API
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
+            echo "Missing VERCEL_TOKEN or VERCEL_PROJECT_ID secret. Aborting.";
+            exit 1;
+          fi
+
+          echo "Triggering Vercel deployment for project: $VERCEL_PROJECT_ID"
+
+          resp=$(curl -s -X POST "https://api.vercel.com/v13/deployments" \
+            -H "Authorization: Bearer ${VERCEL_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d '{"projectId":"'${VERCEL_PROJECT_ID}'","gitSource":{"type":"github","org":"'${GITHUB_REPOSITORY%/*}'","repo":"'${GITHUB_REPOSITORY#*/}'"}}')
+
+          echo "Vercel response: $resp"
+
+          if echo "$resp" | grep -q "uid"; then
+            echo "Vercel deployment triggered successfully.";
+          else
+            echo "Failed to trigger Vercel deployment. Response:";
+            echo "$resp";
+            exit 1;
+          fi
